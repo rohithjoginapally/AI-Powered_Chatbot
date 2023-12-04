@@ -3,6 +3,13 @@ import os
 import openai
 import json
 
+import spacy
+
+# Load the English NLP model
+nlp = spacy.load("en_core_web_sm")
+
+
+
 react_build_folder = '/Users/rohithjoginapally/Desktop/Project/front_end/chatbot-ui/build'
 app = Flask(__name__, static_folder=react_build_folder, static_url_path='')
 
@@ -44,9 +51,13 @@ def search_knowledge_base(question):
     simplified_question = question.lower().strip()
     print(f"Received question: {simplified_question}")  # Debug print
 
-    # Handle general greetings
-    greetings = ["hi", "hello", "hey", "greetings"]
-    if any(simplified_question.startswith(greet) for greet in greetings):
+    # Define keywords for different categories
+    process_keywords = ["process", "steps", "procedure", "how does it work", "what happens"]
+    pricing_keywords = ["price", "cost", "charge", "fee", "pricing", "expenses", "how much"]
+    greeting_keywords = ["hi", "hello", "hey", "greetings", "hi there", "good morning", "good afternoon", "good evening"]
+
+    # Check if the question is a greeting
+    if any(greet in simplified_question for greet in greeting_keywords):
         return "Hello! How can I assist you today?"
 
     # Handle sensitive phrases indicating a loss
@@ -55,17 +66,29 @@ def search_knowledge_base(question):
         return ("I'm truly sorry to hear about your loss. Please let us know how we can support you during this difficult time. " +
                 "At Tulip, we specialize in providing compassionate and caring service to help you through these moments.")
 
-    # Loop through categories and their questions in the knowledge base
+    # Search for process-related questions
+    if any(keyword in simplified_question for keyword in process_keywords):
+        for category in knowledge_base:
+            if category["category"] == "Process and Logistics":
+                return category["questions"][0]["a"]  # Return the first answer in the "Process and Logistics" category
+
+    # Search for pricing-related questions
+    if any(keyword in simplified_question for keyword in pricing_keywords):
+        for category in knowledge_base:
+            if category["category"] == "Pricing and Fees":
+                return category["questions"][0]["a"]  # Return the first answer in the "Pricing and Fees" category
+
+    # Search the knowledge base for a matching question
     for category in knowledge_base:
         for qa_pair in category["questions"]:
             question_content = qa_pair["q"].lower()
             answer_content = qa_pair["a"]
-
-            # Check if the user question is similar to any of the questions in the knowledge base
             if simplified_question in question_content:
                 return answer_content
 
-    return None
+    # If no match is found
+    return "I'm sorry, I don't have an answer for that. Please ask another question or refer to our documentation."
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
