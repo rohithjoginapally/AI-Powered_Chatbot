@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>XYZ Cremation Services Chatbot</h1>
+      <h1>Tulip Cremation Services Chatbot</h1>
       <div className="chat-container">
         {messages.map((m, index) => (
           <div key={index} className={`chat-message ${m.sender.toLowerCase()}`}>

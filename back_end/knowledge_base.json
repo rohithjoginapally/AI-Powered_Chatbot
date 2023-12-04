@@ -1,0 +1,100 @@
+[
+    {
+        "category": "Service Overview",
+        "questions": [
+            {
+                "q": "What is Tulip Cremation and what services do they offer?",
+                "a": "Tulip Cremation is a provider of direct cremation services. They offer a simple process with support available online or over the phone. They are known for their transparency in pricing and have a centralized support team."
+            }
+        ]
+    },
+    {
+        "category": "Pricing and Fees",
+        "questions": [
+            {
+                "q": "How does Tulip Cremation ensure transparent pricing?",
+                "a": "Tulip Cremation's pricing is transparent with no hidden charges. The final quote includes all necessary fees, such as pickup, transportation, taxes, and permits. They don't charge for mileage or daily refrigeration fees, which are common in the industry."
+            }
+        ]
+    },
+    {
+        "category": "Process and Logistics",
+        "questions": [
+            {
+                "q": "What is the process once someone chooses to work with Tulip Cremation?",
+                "a": "When a customer chooses Tulip Cremation, they make arrangements for pickup and care. They notify relevant authorities, handle permits, and file paperwork for the death certificate and cremation. Everything is included in the initial quote."
+            }
+        ]
+    },
+    {
+        "category": "Additional Services",
+        "questions": [
+            {
+                "q": "Are there additional services or fees for scattering ashes or shipping them?",
+                "a": "Tulip Cremation can ship ashes anywhere in the U.S. without an additional fee. For sea scattering, there is an extra charge of $250. They coordinate the scattering and inform the next of kin about the location and date of scattering."
+            }
+        ]
+    },
+    {
+        "category": "Payment Options",
+        "questions": [
+            {
+                "q": "What payment options are available for Tulip Cremation's services?",
+                "a": "Customers can pay the total amount upfront or choose monthly payments over one, three, or seven years. Paying upfront is more cost-effective as longer payment plans include additional interest and loan fees."
+            }
+        ]
+    },
+    {
+        "category": "Preparations for Future",
+        "questions": [
+            {
+                "q": "How should one prepare if they plan to use Tulip Cremation's services in the future?",
+                "a": "It's advised to inform close friends and family about the decision to use Tulip Cremation and provide them with contact information. In case of passing away at home, certain procedures involving the local police or coroner's office are followed before Tulip can take over."
+            }
+        ]
+    },
+    {
+        "category": "Additional Considerations",
+        "questions": [
+            {
+                "q": "What should be considered when planning for cremation space in a cemetery?",
+                "a": "If planning to place ashes in a cemetery, it's important to discuss space availability and costs with the cemetery. Some cemeteries allow multiple remains in one plot, and fees might apply for opening and closing the space or for urn vaults."
+            }
+        ]
+    },
+    {
+        "category": "Pricing Information",
+        "questions": [
+            {
+                "q": "Can you provide information about your pricing?",
+                "a": "Tulip Cremation offers competitive pricing for our services. For detailed pricing information, including service fees and additional charges, please refer to our pricing list or visit our website."
+            },
+            {
+                "q": "What are the costs of cremation services?",
+                "a": "The costs for our cremation services vary based on specific needs and choices. We ensure transparency in our pricing, with no hidden fees. For a detailed breakdown, please refer to our official pricing list."
+            },
+            {
+                "q": "What is the initial quote?",
+                "a": "The initial quote for Tulip Cremation's direct cremation service starts at $1,195. This includes all necessary arrangements such as collection and transportation, filing of paperwork, the cremation process itself, and the return of ashes to the family."
+            }
+        ]
+    },
+    {
+        "category": "Services Offered",
+        "questions": [
+            {
+                "q": "What services does Tulip Cremation offer?",
+                "a": "Tulip Cremation offers direct cremation services that can be arranged remotely with the help of their care team. The company provides a simple, dignified cremation without witnesses, and they handle necessary permits, paperwork, and transportation. Their services include collection and transportation, filing of all necessary paperwork, cremation, and delivery. Tulip's pricing is transparent, with a simple direct cremation starting at $1,195, which is less than half the cost of a cremation at a traditional funeral home. They serve various cities in California and aim to provide compassionate and complete care, making the process easy for families during a difficult time."
+            }
+        ]
+    },
+    {
+        "category": "Cremation Process",
+        "questions": [
+            {
+                "q": "What is the cremation process at Tulip Cremation?",
+                "a": "The cremation process at Tulip Cremation involves four main steps: 1) Arrange & Collect: We bring your loved one into our care as soon as possible after all arrangements are made (2-4 Days). 2) Registration: We register your loved one\u2019s death with the county and state to proceed with cremation (1-2 Days). 3) Cremation: We perform a private, dignified cremation at one of our locally owned facilities (8-14 Days). 4) Return Ashes: We return your loved one\u2019s ashes to any US postal address via USPS Priority Mail Express."
+            }
+        ]
+    }
+]
