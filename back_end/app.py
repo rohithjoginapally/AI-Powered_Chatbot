@@ -9,6 +9,7 @@ import spacy
 nlp = spacy.load("en_core_web_sm")
 
 
+
 react_build_folder = '/Users/rohithjoginapally/Desktop/Project/front_end/chatbot-ui/build'
 app = Flask(__name__, static_folder=react_build_folder, static_url_path='')
 
