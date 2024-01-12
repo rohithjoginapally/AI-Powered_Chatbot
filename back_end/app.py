@@ -8,18 +8,16 @@ import spacy
 # Load the English NLP model
 nlp = spacy.load("en_core_web_sm")
 
-
-
 react_build_folder = '/Users/rohithjoginapally/Desktop/Project/front_end/chatbot-ui/build'
 app = Flask(__name__, static_folder=react_build_folder, static_url_path='')
 
 # Read OpenAI API Key from file
-with open('OPENAI_API_KEY', 'r') as file:
+with open('/Users/rohithjoginapally/Desktop/Project/back_end/OPENAI_API_KEY.txt', 'r') as file:
     openai_api_key = file.read().strip()
 openai.api_key = openai_api_key
 
 # Load Knowledge Base from JSON File
-with open('knowledge_base.json', 'r') as file:
+with open('/Users/rohithjoginapally/Desktop/Project/back_end/knowledge_base.json', 'r') as file:
     knowledge_base = json.load(file)
 
 @app.route('/', defaults={'path': ''})
