@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AI-Powered_Chatbot/static/css/main.a064a69e.css",
+    "main.js": "/AI-Powered_Chatbot/static/js/main.8c15b93a.js",
+    "static/js/787.bec39402.chunk.js": "/AI-Powered_Chatbot/static/js/787.bec39402.chunk.js",
+    "index.html": "/AI-Powered_Chatbot/index.html",
+    "main.a064a69e.css.map": "/AI-Powered_Chatbot/static/css/main.a064a69e.css.map",
+    "main.8c15b93a.js.map": "/AI-Powered_Chatbot/static/js/main.8c15b93a.js.map",
+    "787.bec39402.chunk.js.map": "/AI-Powered_Chatbot/static/js/787.bec39402.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a064a69e.css",
+    "static/js/main.8c15b93a.js"
+  ]
+}
